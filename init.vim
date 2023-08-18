@@ -1,8 +1,9 @@
 """""" my config """""
 """ general
 set number "show line number
-set tabstop=2 "tab size = 4
-set shiftwidth=2 "auto indent size = 4
+set tabstop=2 "tab size = 2
+set shiftwidth=2 "auto indent size = 2
+set nowrap
 set nocompatible
 
 """ terminal
@@ -19,16 +20,16 @@ noremap <C-k> <C-w><C-k>
 noremap <C-l> <C-w><C-l>
 
 " window scroll
-augroup windowScr
-	autocmd!
-	au BufEnter * set scroll=3
-	au BufEnter * set nowrap
-augroup END
+"augroup windowScr
+"	autocmd!
+"	au BufEnter * set scroll=3
+"	au BufEnter * set nowrap
+"augroup END
 
 nnoremap <Up> <C-u>
 nnoremap <Down> <C-d>
-nnoremap <Right> zl
-nnoremap <Left> zh
+nnoremap <Right> 5zl
+nnoremap <Left> 5zh
 map <ScrollWheelUp> <C-u>
 map <ScrollWheelDown> <C-d>
 
