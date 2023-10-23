@@ -33,3 +33,9 @@ https://github.com/neoclide/coc.nvim/wiki/Language-servers#haskell
 ### nerd fonts
 fern needs nerd icon for colord file name and funcy icons.
 https://www.nerdfonts.com/
+'''
+mkdir -p ~/.local/share/fonts
+cp HackNerdFont.ttf ~/.local/share/fonts/
+fc-cache -f -v
+fc-list | grep Hack
+'''
